@@ -11,16 +11,22 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="css/main.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
 </head>
 
 <body>
     <header id="cabecalho" class="container">
+
+        <div id="botao-menu-mobile">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
         <div id="logotipo">
             <img src="img/logo.png" alt="BookMeNow" height="40">
         </div>
@@ -31,6 +37,7 @@
                 <li><a href="sobre-nos.html">Sobre nós</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
+
         </nav>
 
         <div id="botaoTopo">
@@ -76,16 +83,28 @@
                 <p>Encontre Profissionais na Categoria Desejada</p>
             </div>
 
-            <div class="lista-card-categorias">
-                <div>
+            <div class="lista-card-categorias owl-carousel owl-theme">
+                <div class="item">
                     <img src="img/categoria-carro.jpg" alt="carro">
                     <span>Mecânico</span>
                 </div>
-                <div>
+                <div class="item">
                     <img src="img/categoria-carro.jpg" alt="carro">
                     <span>Mecânico</span>
                 </div>
-                <div>
+                <div class="item">
+                    <img src="img/categoria-carro.jpg" alt="carro">
+                    <span>Mecânico</span>
+                </div>
+                <div class="item">
+                    <img src="img/categoria-carro.jpg" alt="carro">
+                    <span>Mecânico</span>
+                </div>
+                <div class="item">
+                    <img src="img/categoria-carro.jpg" alt="carro">
+                    <span>Mecânico</span>
+                </div>
+                <div class="item">
                     <img src="img/categoria-carro.jpg" alt="carro">
                     <span>Mecânico</span>
                 </div>
@@ -96,10 +115,10 @@
         <section id="secaoServicos">
             <div class="secao-titulo">
                 <div class="titulo">
-                    <h2>Categorias</h2>
+                    <h2>Serviços Populares</h2>
                     <a href="#">Ver mais ></a>
                 </div>
-                <p>Encontre Profissionais na Categoria Desejada</p>
+                <p>Descubra nossos serviços mais populares</p>
             </div>
 
             <div class="lista-card-servicos">
@@ -407,68 +426,72 @@
 
     <!-- Bloco como funciona - Atividade Futura -->
 
+
     <footer id="rodape">
-        <div class="container">
+        <div class="container" id="linha-rodape">
             <div class="coluna-rodape">
                 <h2>Categorias</h2>
                 <ul>
                     <li><a href="#">TI</a></li>
                     <li><a href="#">Barbeiro</a></li>
-                    <li><a href="#">Mecanico</a></li>
+                    <li><a href="#">Mecânico</a></li>
                 </ul>
             </div>
+
+            <div class="coluna-rodape">
+                <h2>BookMeNow</h2>
+                <ul>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Politica de Privacidade</a></li>
+                </ul>
+            </div>
+
+            <div class="coluna-rodape">
+                <h2>Contatos</h2>
+                <ul>
+                    <li><i class="fa-solid fa-hotel"></i> Paraiba, 125</li>
+
+                    <li><a href="https://wa.me/5514999999999?text=Olá tudo bem"><i class="fa-brands fa-whatsapp"></i>
+                            (14) 99999-9999</a></li>
+
+                    <li><a href="tel:1434333698"><i class="fa-solid fa-phone"></i>
+                            (14) 3433-3698</a></li>
+
+                    <li><a href="mailto:contato@bookmenow.com.br"><i class="fa-regular fa-envelope"></i>
+                            contato@bookmenow.com.br</a></li>
+                </ul>
+            </div>
+
+            <div class="coluna-rodape">
+                <h2>Rede Sociais</h2>
+                <div class="rede-social">
+                    <a href="https://facebook.com">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://instagram.com">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="link-app">
+                    <img src="img/google-play.png" alt="Baixe nosso APP Google play">
+                    <img src="img/app-store.png" alt="Baixe nosso APP Apple Store">
+                </div>
+            </div>
+
         </div>
-
-        <div class="coluna-rodape">
-            <h2>BookMeNow</h2>
-            <ul>
-                <li><a href="#">Sobre nós</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Política de privacidade</a></li>
-            </ul>
-        </div>
-        </div>
-
-        <div class="coluna-rodape">
-            <h2>Contatos</h2>
-            <ul>
-                <li><i class="fa-solid fa-hotel"></i>Paraiba, 125</li>
-                <li><a href="http://wa.me/55149999999999?text=Olá tudo bem"><i
-                            class="fa-brands fa-whatsapp"></i>(14)99999-99999</a></li>
-                <li><a href="tel:1434333698"><i class="fa-solid fa-phone"></i>(14) 3433-3698</a></li>
-                <li><a href="mailto:contato@bookmenow.com.br"><iclass="fa-regular
-                            fa-envelope"></i>contato@bookmenow.com.br</a></li>
-            </ul>
-        </div>
-        </div>
-
-        <div class="coluna-rodape">
-            <div class="rede-social">
-                <a href="http://facebook.com"><i class="fa-brands fa-facebook"></i></a>
-                <a href="http://instagram.com"><i class="fa-brands fa-instagram"></i></a>
-            </div> <!--rede social-->
-
-            <div class="link.app">
-                <img src="img/google-play.png" alt="Baixe nosso APP Google play">
-                <img src="img/app-store.png" alt="Baixe nosso APP Apple play">
-            </div> <!--link-app-->
-
-        </div> <!--coluna-rodape-->
-
-        </div> <!--container-->
 
         <div class="copyright">
-            <p>&copy; 2023 - Todos os direitos são reservados | Desenvolvido por Nicolas</p>
-        </div> <!--Copyright-->
+            <p>&copy; 2023 - Todos os direitos são reservados | Desenvolvido por Edson</p>
+        </div>
 
-    </footer> <!--Rodape-->
-
-
-    <i class="fi fi-rr-marker"></i>
+    </footer>
 
 
 
-
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
